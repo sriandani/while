@@ -1,11 +1,9 @@
-number = int(input("Masukkan sebuah bilangan (masukkan -1 untuk keluar): "))
+total = 0
+count = 0
 
-while number != -1:
-    if number % 2 == 0:
-        print(f"{number} adalah bilangan genap.")
-    else:
-        print(f"{number} adalah bilangan ganjil.")
-    
-    number = int(input("Masukkan sebuah bilangan (masukkan -1 untuk keluar): "))
+while count < 2:
+    num = float(input("Masukkan bilangan: "))  
+    total += num 
+    count += 1   
 
-print("Selesai.")
+print("Jumlah dari kedua bilangan adalah:", total)
